@@ -215,7 +215,7 @@ class BookPGPersistencePipeline:
                         ) VALUES (%s, %s, %s, %s, %s, %s, %s)
                     ''',
                    (book_id,
-                    int(adapter.get('rating')) + randint(-1,1),
+                    max(0, min(5, int(adapter.get('rating')) + randint(-1,1))),
                     float(adapter.get('price')) + uniform(-5, 5),
                     int(adapter.get('stock')) + uniform(0, 5),
                     float(adapter.get('tax')) + uniform(0, 2),
