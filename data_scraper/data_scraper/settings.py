@@ -87,6 +87,12 @@ POSTGRES_USER = os.getenv('AZURE_PG_USER')
 POSTGRES_PASSWORD = os.getenv('AZURE_PG_PASSWORD')
 POSTGRES_SSL_MODE = os.getenv('AZURE_PG_SSL_MODE')
 
+# Azure OpenAI settings for embeddings
+AZURE_OPENAI_API_KEY = os.getenv('AZURE_OPENAI_API_KEY')
+AZURE_OPENAI_ENDPOINT = os.getenv('AZURE_OPENAI_ENDPOINT')
+AZURE_OPENAI_API_VERSION = os.getenv('AZURE_OPENAI_API_VERSION')
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT = os.getenv('AZURE_OPENAI_EMBEDDING_DEPLOYMENT')
+
 ITEM_PIPELINES = {
     'data_scraper.pipelines.book_pipeline.BookPGPersistencePipeline': 0,
     'data_scraper.pipelines.quote_pipeline.QuotePGPersistencePipeline': 0,
