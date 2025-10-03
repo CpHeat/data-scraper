@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 # Charger les variables d'environnement depuis le fichier env
-load_dotenv('env')
+load_dotenv('.env')
 
 BOT_NAME = "data_scraper"
 
@@ -75,7 +75,7 @@ DOWNLOAD_DELAY = 1
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 HTTPCACHE_ENABLED = True
-HTTPCACHE_EXPIRATION_SECS = 3600
+HTTPCACHE_EXPIRATION_SECS = 60*60*24
 HTTPCACHE_DIR = "httpcache"
 HTTPCACHE_IGNORE_HTTP_CODES = []
 HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"

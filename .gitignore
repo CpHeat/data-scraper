@@ -1,0 +1,5 @@
+.venv
+.scrapy
+.env
+.idea
+__pycache__

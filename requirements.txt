@@ -1,0 +1,6 @@
+scrapy
+psycopg2
+python-dotenv
+chompjs
+openai
+pgvector
