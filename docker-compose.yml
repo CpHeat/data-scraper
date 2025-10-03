@@ -1,0 +1,9 @@
+services:
+  scraper:
+    build: .
+    container_name: data-scraper
+    env_file:
+      - data_scraper/.env
+    volumes:
+      - ./httpcache:/app/data_scraper/httpcache
+    restart: "no"

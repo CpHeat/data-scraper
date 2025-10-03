@@ -2,7 +2,6 @@ from random import randint, uniform
 import random
 
 import psycopg2
-import os
 from openai import AzureOpenAI
 
 from itemadapter import ItemAdapter
@@ -141,7 +140,7 @@ class BookPGPersistencePipeline:
             return item
 
     def _generate_embedding(self, text, spider):
-        """Génère un embedding pour le texte donné"""
+        """Generates embeddings for given text"""
         if not self.openai_client or not text:
             return None
 

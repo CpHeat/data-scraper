@@ -1,0 +1,30 @@
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv
+env/
+venv/
+ENV/
+
+# Scrapy
+.scrapy
+httpcache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Misc
+*.log
+.DS_Store
+README.md
+LICENSE
